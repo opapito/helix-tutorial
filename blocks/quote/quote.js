@@ -4,8 +4,8 @@ export default function decorate(block) {
   const blockQuote = document.createElement('blockquote');
   blockQuote.innerHTML = `"${quoteDiv.innerHTML}"`;
   quoteDiv.parentElement.replaceWith(blockQuote);
-  //decorate the author
 
+  // decorate the author
   const authorDiv = block.querySelector(':scope > div > div');
   if (authorDiv) {
     const p = document.createElement('p');
